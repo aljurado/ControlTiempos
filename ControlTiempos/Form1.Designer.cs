@@ -38,6 +38,7 @@
             this.btnIniciar = new System.Windows.Forms.Button();
             this.cmbClientes = new System.Windows.Forms.ComboBox();
             this.btnAgregar = new System.Windows.Forms.Button();
+            this.chkAlwaysOnTop = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // timer1
@@ -88,10 +89,20 @@
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
+            // chkAlwaysOnTop
+            // 
+            resources.ApplyResources(this.chkAlwaysOnTop, "chkAlwaysOnTop");
+            this.chkAlwaysOnTop.Checked = true;
+            this.chkAlwaysOnTop.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkAlwaysOnTop.Name = "chkAlwaysOnTop";
+            this.chkAlwaysOnTop.UseVisualStyleBackColor = true;
+            this.chkAlwaysOnTop.CheckedChanged += new System.EventHandler(this.chkAlwaysOnTop_CheckedChanged);
+            // 
             // frmMain
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.chkAlwaysOnTop);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.cmbClientes);
             this.Controls.Add(this.btnIniciar);
@@ -118,5 +129,6 @@
         private Button btnIniciar;
         private ComboBox cmbClientes;
         private Button btnAgregar;
+        private CheckBox chkAlwaysOnTop;
     }
 }

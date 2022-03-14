@@ -47,6 +47,7 @@ namespace ControlTiempos
                     }
                     txtTarea.Text = "";
                     cmbClientes.Text = "";
+                    lblTiempoEmpleado.Text ="00:00";
                 }
                 else
                 {
@@ -128,6 +129,17 @@ namespace ControlTiempos
                 MessageBox.Show("El cliente que has introducido ya esiste.");
             }
                 
+        }
+
+        private void chkAlwaysOnTop_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkAlwaysOnTop.Checked)
+            {
+                TopMost=true;
+            } else
+            {
+                TopMost = false;
+            }
         }
     }
 }
