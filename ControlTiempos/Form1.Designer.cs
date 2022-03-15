@@ -39,6 +39,9 @@
             this.cmbClientes = new System.Windows.Forms.ComboBox();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.chkAlwaysOnTop = new System.Windows.Forms.CheckBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.cmbReferencia = new System.Windows.Forms.ComboBox();
+            this.btnAgregarReferencia = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // timer1
@@ -98,10 +101,32 @@
             this.chkAlwaysOnTop.UseVisualStyleBackColor = true;
             this.chkAlwaysOnTop.CheckedChanged += new System.EventHandler(this.chkAlwaysOnTop_CheckedChanged);
             // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // cmbReferencia
+            // 
+            this.cmbReferencia.FormattingEnabled = true;
+            resources.ApplyResources(this.cmbReferencia, "cmbReferencia");
+            this.cmbReferencia.Name = "cmbReferencia";
+            // 
+            // btnAgregarReferencia
+            // 
+            resources.ApplyResources(this.btnAgregarReferencia, "btnAgregarReferencia");
+            this.btnAgregarReferencia.Name = "btnAgregarReferencia";
+            this.btnAgregarReferencia.UseVisualStyleBackColor = true;
+            this.btnAgregarReferencia.Click += new System.EventHandler(this.bnAgregarReferencia_Click);
+            // 
             // frmMain
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnAgregarReferencia);
+            this.Controls.Add(this.cmbReferencia);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.chkAlwaysOnTop);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.cmbClientes);
@@ -130,5 +155,8 @@
         private ComboBox cmbClientes;
         private Button btnAgregar;
         private CheckBox chkAlwaysOnTop;
+        private Label label3;
+        private ComboBox cmbReferencia;
+        private Button btnAgregarReferencia;
     }
 }

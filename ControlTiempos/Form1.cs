@@ -3,8 +3,12 @@ namespace ControlTiempos
     public partial class frmMain : Form
     {
         public Boolean activo = false;
+        public Boolean pausa = false;
         public DateTime horaIni;
+        public DateTime pausaIni;
+        public Int32 pausaAcumulada = 0;
         public string tiempoEmpleado = "";
+        public string tiempoPausa = "";
 
         public frmMain()
         {
@@ -38,6 +42,9 @@ namespace ControlTiempos
                     cmbClientes.Enabled = true;
                     txtTarea.Enabled = true;
                     btnAgregar.Enabled = true;
+                    cmbReferencia.Enabled = true;
+                    btnAgregarReferencia.Enabled = true;
+                    //btnPausa.Visible = false;
                     btnIniciar.Text = "INICIAR";
                     timer1.Stop();
                     string ruta = @"historial.csv";
@@ -56,6 +63,10 @@ namespace ControlTiempos
                     cmbClientes.Enabled = false;
                     txtTarea.Enabled = false;
                     btnAgregar .Enabled = false;
+                    cmbReferencia.Enabled = false;
+                    btnAgregarReferencia .Enabled = false;
+                    //btnPausa .Enabled = false;
+                    //btnPausa.Visible = true;
                     btnIniciar.Text = "PARAR";
                     horaIni = DateTime.Now;
                     lblTiempoEmpleado.Visible = true;
@@ -76,7 +87,15 @@ namespace ControlTiempos
 
         private void frmMain_Load(object sender, EventArgs e)
         {
+            cargarCombos(-1, -1);
+        }
 
+        private void cargarCombos (Int16 clientes, Int16 referencia)
+        {
+
+            // CARGA COMBO CLIENTES
+            cmbClientes.Items.Clear();
+            Int16 contadorClientes = 0;
             string ruta = @"clientes.txt";
             using (StreamReader sr = File.OpenText(ruta))
             {
@@ -84,8 +103,48 @@ namespace ControlTiempos
                 while ((s = sr.ReadLine()) != null)
                 {
                     cmbClientes.Items.Add(s);
+                    contadorClientes++;
                 }
             }
+
+            if (clientes != -1)
+            {
+                if (clientes == -2)
+                {
+                    cmbClientes.SelectedIndex = contadorClientes - 1;
+                }
+                else
+                {
+                    cmbClientes.SelectedIndex = clientes;
+                }
+            }
+
+            // CARGA COMBO REFRENCIAS
+            cmbReferencia.Items.Clear();
+            Int16 contadorReferencia = 0;
+            ruta = @"referencias.txt";
+            using (StreamReader sr = File.OpenText(ruta))
+            {
+                string s = "";
+                while ((s = sr.ReadLine()) != null)
+                {
+                    cmbReferencia.Items.Add(s);
+                    contadorReferencia++;
+                }
+            }
+
+            if (referencia != -1)
+            {
+                if (referencia == -2)
+                {
+                    cmbReferencia.SelectedIndex = contadorReferencia - 1;
+                }
+                else
+                {
+                    cmbReferencia.SelectedIndex = referencia;
+                }
+            }
+
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
@@ -108,21 +167,12 @@ namespace ControlTiempos
                     sw.WriteLine(nuevoCliente);
                 }
 
-                cmbClientes.Items.Clear();
-
                 Int16 indice = 0;
-
-                using (StreamReader sr = File.OpenText(ruta))
+                if (cmbReferencia.Text != "")
                 {
-                    string s = "";
-                    while ((s = sr.ReadLine()) != null)
-                    {
-                        cmbClientes.Items.Add(s);
-                        indice++;
-                    }
+                    indice = (short)cmbReferencia.SelectedIndex;
                 }
-
-                cmbClientes.SelectedIndex = indice-1;
+                cargarCombos(-2, indice);
             }
             else
             {
@@ -139,6 +189,44 @@ namespace ControlTiempos
             } else
             {
                 TopMost = false;
+            }
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bnAgregarReferencia_Click(object sender, EventArgs e)
+        {
+            string nuevaReferencia = cmbReferencia.Text;
+            Boolean existe = false;
+            foreach (var item in cmbReferencia.Items)
+            {
+                if (item.Equals(nuevaReferencia))
+                {
+                    existe = true;
+                }
+            }
+
+            if (!existe)
+            {
+                string ruta = @"referencias.txt";
+                using (StreamWriter sw = File.AppendText(ruta))
+                {
+                    sw.WriteLine(nuevaReferencia);
+                }
+
+                Int16 indice = 0;
+                if (cmbClientes.Text != "")
+                {
+                    indice = (short)cmbClientes.SelectedIndex;
+                }
+                cargarCombos(indice,-2);
+            }
+            else
+            {
+                MessageBox.Show("La referencia que has introducido ya esiste.");
             }
         }
     }

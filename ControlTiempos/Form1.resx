@@ -62,10 +62,10 @@
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="txtTarea.Location" type="System.Drawing.Point, System.Drawing">
-    <value>76, 48</value>
+    <value>76, 83</value>
   </data>
   <data name="txtTarea.Size" type="System.Drawing.Size, System.Drawing">
-    <value>364, 27</value>
+    <value>463, 27</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="txtTarea.TabIndex" type="System.Int32, mscorlib">
@@ -81,7 +81,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtTarea.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>10</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -108,7 +108,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>9</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -118,7 +118,7 @@
     <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 51</value>
+    <value>23, 86</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>47, 20</value>
@@ -139,7 +139,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>8</value>
   </data>
   <data name="lblTiempoEmpleado.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -148,7 +148,7 @@
     <value>Arial Rounded MT Bold, 25.800001pt</value>
   </data>
   <data name="lblTiempoEmpleado.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 84</value>
+    <value>23, 120</value>
   </data>
   <data name="lblTiempoEmpleado.Size" type="System.Drawing.Size, System.Drawing">
     <value>140, 51</value>
@@ -172,10 +172,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblTiempoEmpleado.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>7</value>
   </data>
   <data name="btnIniciar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>255, 82</value>
+    <value>354, 116</value>
   </data>
   <data name="btnIniciar.Size" type="System.Drawing.Size, System.Drawing">
     <value>185, 55</value>
@@ -196,7 +196,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnIniciar.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>6</value>
   </data>
   <data name="cmbClientes.Location" type="System.Drawing.Point, System.Drawing">
     <value>76, 15</value>
@@ -217,7 +217,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;cmbClientes.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>5</value>
   </data>
   <data name="btnAgregar.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 8pt, style=Bold</value>
@@ -226,7 +226,7 @@
     <value>263, 14</value>
   </data>
   <data name="btnAgregar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 29</value>
+    <value>30, 30</value>
   </data>
   <data name="btnAgregar.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -247,13 +247,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnAgregar.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>4</value>
   </data>
   <data name="chkAlwaysOnTop.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="chkAlwaysOnTop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>306, 15</value>
+    <value>407, 17</value>
   </data>
   <data name="chkAlwaysOnTop.Size" type="System.Drawing.Size, System.Drawing">
     <value>132, 24</value>
@@ -274,6 +274,84 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chkAlwaysOnTop.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 52</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 20</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Ref.:</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cmbReferencia.Location" type="System.Drawing.Point, System.Drawing">
+    <value>76, 49</value>
+  </data>
+  <data name="cmbReferencia.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 28</value>
+  </data>
+  <data name="cmbReferencia.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;cmbReferencia.Name" xml:space="preserve">
+    <value>cmbReferencia</value>
+  </data>
+  <data name="&gt;&gt;cmbReferencia.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbReferencia.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cmbReferencia.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnAgregarReferencia.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnAgregarReferencia.Location" type="System.Drawing.Point, System.Drawing">
+    <value>263, 47</value>
+  </data>
+  <data name="btnAgregarReferencia.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="btnAgregarReferencia.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="btnAgregarReferencia.Text" xml:space="preserve">
+    <value>+</value>
+  </data>
+  <data name="&gt;&gt;btnAgregarReferencia.Name" xml:space="preserve">
+    <value>btnAgregarReferencia</value>
+  </data>
+  <data name="&gt;&gt;btnAgregarReferencia.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnAgregarReferencia.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnAgregarReferencia.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -283,7 +361,7 @@
     <value>8, 20</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>452, 143</value>
+    <value>545, 181</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -23099,6 +23177,9 @@
         P////////////////////////////////////////////////////////////////////gAAAAAAAAAA
         AAAAAAAAAAAAAAAAf/////////////////////////////////8=
 </value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
