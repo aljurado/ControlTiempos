@@ -42,6 +42,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.cmbReferencia = new System.Windows.Forms.ComboBox();
             this.btnAgregarReferencia = new System.Windows.Forms.Button();
+            this.btnPausa = new System.Windows.Forms.Button();
+            this.lblContadorUltimaPausa = new System.Windows.Forms.Label();
+            this.chkMostrarContadorPausa = new System.Windows.Forms.CheckBox();
+            this.lblEtiquetaUltimaPausa = new System.Windows.Forms.Label();
+            this.lblEtiquetaPausaAcumulada = new System.Windows.Forms.Label();
+            this.lblPausaAcumulada = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // timer1
@@ -68,7 +74,7 @@
             // lblTiempoEmpleado
             // 
             resources.ApplyResources(this.lblTiempoEmpleado, "lblTiempoEmpleado");
-            this.lblTiempoEmpleado.ForeColor = System.Drawing.Color.Red;
+            this.lblTiempoEmpleado.ForeColor = System.Drawing.Color.Blue;
             this.lblTiempoEmpleado.Name = "lblTiempoEmpleado";
             this.lblTiempoEmpleado.Click += new System.EventHandler(this.lblTiempoEmpleado_Click);
             // 
@@ -120,10 +126,54 @@
             this.btnAgregarReferencia.UseVisualStyleBackColor = true;
             this.btnAgregarReferencia.Click += new System.EventHandler(this.bnAgregarReferencia_Click);
             // 
+            // btnPausa
+            // 
+            this.btnPausa.BackgroundImage = global::ControlTiempos.Properties.Resources.pausa;
+            resources.ApplyResources(this.btnPausa, "btnPausa");
+            this.btnPausa.Name = "btnPausa";
+            this.btnPausa.UseVisualStyleBackColor = true;
+            this.btnPausa.Click += new System.EventHandler(this.btnPausa_Click);
+            // 
+            // lblContadorUltimaPausa
+            // 
+            resources.ApplyResources(this.lblContadorUltimaPausa, "lblContadorUltimaPausa");
+            this.lblContadorUltimaPausa.ForeColor = System.Drawing.Color.Red;
+            this.lblContadorUltimaPausa.Name = "lblContadorUltimaPausa";
+            // 
+            // chkMostrarContadorPausa
+            // 
+            resources.ApplyResources(this.chkMostrarContadorPausa, "chkMostrarContadorPausa");
+            this.chkMostrarContadorPausa.Name = "chkMostrarContadorPausa";
+            this.chkMostrarContadorPausa.UseVisualStyleBackColor = true;
+            this.chkMostrarContadorPausa.CheckedChanged += new System.EventHandler(this.chkMostrarContadorPausa_CheckedChanged);
+            // 
+            // lblEtiquetaUltimaPausa
+            // 
+            resources.ApplyResources(this.lblEtiquetaUltimaPausa, "lblEtiquetaUltimaPausa");
+            this.lblEtiquetaUltimaPausa.Name = "lblEtiquetaUltimaPausa";
+            this.lblEtiquetaUltimaPausa.Click += new System.EventHandler(this.lblEtiquetaUltimaPausa_Click);
+            // 
+            // lblEtiquetaPausaAcumulada
+            // 
+            resources.ApplyResources(this.lblEtiquetaPausaAcumulada, "lblEtiquetaPausaAcumulada");
+            this.lblEtiquetaPausaAcumulada.Name = "lblEtiquetaPausaAcumulada";
+            // 
+            // lblPausaAcumulada
+            // 
+            resources.ApplyResources(this.lblPausaAcumulada, "lblPausaAcumulada");
+            this.lblPausaAcumulada.ForeColor = System.Drawing.Color.Red;
+            this.lblPausaAcumulada.Name = "lblPausaAcumulada";
+            // 
             // frmMain
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lblPausaAcumulada);
+            this.Controls.Add(this.lblEtiquetaPausaAcumulada);
+            this.Controls.Add(this.lblEtiquetaUltimaPausa);
+            this.Controls.Add(this.chkMostrarContadorPausa);
+            this.Controls.Add(this.lblContadorUltimaPausa);
+            this.Controls.Add(this.btnPausa);
             this.Controls.Add(this.btnAgregarReferencia);
             this.Controls.Add(this.cmbReferencia);
             this.Controls.Add(this.label3);
@@ -158,5 +208,11 @@
         private Label label3;
         private ComboBox cmbReferencia;
         private Button btnAgregarReferencia;
+        private Button btnPausa;
+        private Label lblContadorUltimaPausa;
+        private CheckBox chkMostrarContadorPausa;
+        private Label lblEtiquetaUltimaPausa;
+        private Label lblEtiquetaPausaAcumulada;
+        private Label lblPausaAcumulada;
     }
 }

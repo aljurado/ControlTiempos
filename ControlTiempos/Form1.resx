@@ -65,7 +65,7 @@
     <value>76, 83</value>
   </data>
   <data name="txtTarea.Size" type="System.Drawing.Size, System.Drawing">
-    <value>463, 27</value>
+    <value>499, 27</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="txtTarea.TabIndex" type="System.Int32, mscorlib">
@@ -81,7 +81,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtTarea.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>16</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -108,7 +108,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>15</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -139,7 +139,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>14</value>
   </data>
   <data name="lblTiempoEmpleado.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -148,7 +148,7 @@
     <value>Arial Rounded MT Bold, 25.800001pt</value>
   </data>
   <data name="lblTiempoEmpleado.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 120</value>
+    <value>7, 117</value>
   </data>
   <data name="lblTiempoEmpleado.Size" type="System.Drawing.Size, System.Drawing">
     <value>140, 51</value>
@@ -172,10 +172,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblTiempoEmpleado.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>13</value>
   </data>
   <data name="btnIniciar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>354, 116</value>
+    <value>393, 116</value>
   </data>
   <data name="btnIniciar.Size" type="System.Drawing.Size, System.Drawing">
     <value>185, 55</value>
@@ -196,7 +196,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnIniciar.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>12</value>
   </data>
   <data name="cmbClientes.Location" type="System.Drawing.Point, System.Drawing">
     <value>76, 15</value>
@@ -217,7 +217,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;cmbClientes.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>11</value>
   </data>
   <data name="btnAgregar.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 8pt, style=Bold</value>
@@ -247,13 +247,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnAgregar.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>10</value>
   </data>
   <data name="chkAlwaysOnTop.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="chkAlwaysOnTop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>407, 17</value>
+    <value>446, 17</value>
+  </data>
+  <data name="chkAlwaysOnTop.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
   </data>
   <data name="chkAlwaysOnTop.Size" type="System.Drawing.Size, System.Drawing">
     <value>132, 24</value>
@@ -274,7 +277,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chkAlwaysOnTop.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>9</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -304,7 +307,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>8</value>
   </data>
   <data name="cmbReferencia.Location" type="System.Drawing.Point, System.Drawing">
     <value>76, 49</value>
@@ -325,7 +328,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;cmbReferencia.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>7</value>
   </data>
   <data name="btnAgregarReferencia.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -352,6 +355,219 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnAgregarReferencia.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="btnPausa.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="btnPausa.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btnPausa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>333, 116</value>
+  </data>
+  <data name="btnPausa.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 55</value>
+  </data>
+  <data name="btnPausa.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="btnPausa.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;btnPausa.Name" xml:space="preserve">
+    <value>btnPausa</value>
+  </data>
+  <data name="&gt;&gt;btnPausa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnPausa.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnPausa.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblContadorUltimaPausa.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblContadorUltimaPausa.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="lblContadorUltimaPausa.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Rounded MT Bold, 10.2pt</value>
+  </data>
+  <data name="lblContadorUltimaPausa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>261, 120</value>
+  </data>
+  <data name="lblContadorUltimaPausa.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 20</value>
+  </data>
+  <data name="lblContadorUltimaPausa.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="lblContadorUltimaPausa.Text" xml:space="preserve">
+    <value>00:00</value>
+  </data>
+  <data name="lblContadorUltimaPausa.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;lblContadorUltimaPausa.Name" xml:space="preserve">
+    <value>lblContadorUltimaPausa</value>
+  </data>
+  <data name="&gt;&gt;lblContadorUltimaPausa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblContadorUltimaPausa.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblContadorUltimaPausa.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="chkMostrarContadorPausa.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkMostrarContadorPausa.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="chkMostrarContadorPausa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>381, 48</value>
+  </data>
+  <data name="chkMostrarContadorPausa.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="chkMostrarContadorPausa.Size" type="System.Drawing.Size, System.Drawing">
+    <value>197, 24</value>
+  </data>
+  <data name="chkMostrarContadorPausa.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="chkMostrarContadorPausa.Text" xml:space="preserve">
+    <value>Mostrar tiempo en pausa</value>
+  </data>
+  <data name="chkMostrarContadorPausa.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;chkMostrarContadorPausa.Name" xml:space="preserve">
+    <value>chkMostrarContadorPausa</value>
+  </data>
+  <data name="&gt;&gt;chkMostrarContadorPausa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkMostrarContadorPausa.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;chkMostrarContadorPausa.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblEtiquetaUltimaPausa.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblEtiquetaUltimaPausa.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="lblEtiquetaUltimaPausa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>163, 120</value>
+  </data>
+  <data name="lblEtiquetaUltimaPausa.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="lblEtiquetaUltimaPausa.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 20</value>
+  </data>
+  <data name="lblEtiquetaUltimaPausa.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="lblEtiquetaUltimaPausa.Text" xml:space="preserve">
+    <value>Última Pausa:</value>
+  </data>
+  <data name="lblEtiquetaUltimaPausa.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="lblEtiquetaUltimaPausa.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;lblEtiquetaUltimaPausa.Name" xml:space="preserve">
+    <value>lblEtiquetaUltimaPausa</value>
+  </data>
+  <data name="&gt;&gt;lblEtiquetaUltimaPausa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblEtiquetaUltimaPausa.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblEtiquetaUltimaPausa.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblEtiquetaPausaAcumulada.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblEtiquetaPausaAcumulada.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="lblEtiquetaPausaAcumulada.Location" type="System.Drawing.Point, System.Drawing">
+    <value>173, 145</value>
+  </data>
+  <data name="lblEtiquetaPausaAcumulada.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 20</value>
+  </data>
+  <data name="lblEtiquetaPausaAcumulada.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="lblEtiquetaPausaAcumulada.Text" xml:space="preserve">
+    <value>Acumulada:</value>
+  </data>
+  <data name="lblEtiquetaPausaAcumulada.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="lblEtiquetaPausaAcumulada.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;lblEtiquetaPausaAcumulada.Name" xml:space="preserve">
+    <value>lblEtiquetaPausaAcumulada</value>
+  </data>
+  <data name="&gt;&gt;lblEtiquetaPausaAcumulada.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblEtiquetaPausaAcumulada.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblEtiquetaPausaAcumulada.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblPausaAcumulada.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblPausaAcumulada.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="lblPausaAcumulada.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Rounded MT Bold, 10.2pt</value>
+  </data>
+  <data name="lblPausaAcumulada.Location" type="System.Drawing.Point, System.Drawing">
+    <value>261, 145</value>
+  </data>
+  <data name="lblPausaAcumulada.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 20</value>
+  </data>
+  <data name="lblPausaAcumulada.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="lblPausaAcumulada.Text" xml:space="preserve">
+    <value>00:00</value>
+  </data>
+  <data name="lblPausaAcumulada.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;lblPausaAcumulada.Name" xml:space="preserve">
+    <value>lblPausaAcumulada</value>
+  </data>
+  <data name="&gt;&gt;lblPausaAcumulada.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblPausaAcumulada.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblPausaAcumulada.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -361,7 +577,7 @@
     <value>8, 20</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>545, 181</value>
+    <value>587, 181</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -23177,9 +23393,6 @@
         P////////////////////////////////////////////////////////////////////gAAAAAAAAAA
         AAAAAAAAAAAAAAAAf/////////////////////////////////8=
 </value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
