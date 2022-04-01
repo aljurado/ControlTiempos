@@ -4,12 +4,14 @@ namespace ControlTiempos
     {
         public Boolean activo = false;
         public Boolean pausa = false;
+        public Boolean segundos = false;
         public DateTime horaIni;
         public DateTime pausaIni;
         public TimeSpan tiempoEmpleado = new TimeSpan();
         public TimeSpan pausaAcumulada = new TimeSpan();
         public TimeSpan tiempoPausa = new TimeSpan();
         Boolean cambioPausa = false;
+        public string rutaHistorial = @"historial.csv";
 
         public frmMain()
         {
@@ -55,8 +57,7 @@ namespace ControlTiempos
                     lblContadorUltimaPausa.Visible=false;
                     btnIniciar.Text = "INICIAR";
                     timer1.Stop();
-                    string ruta = @"historial.csv";
-                    using (StreamWriter sw = File.AppendText(ruta))
+                    using (StreamWriter sw = File.AppendText(rutaHistorial))
                     {
                         sw.WriteLine(horaIni.ToString() + ";" + cmbClientes.Text + ";" + cmbReferencia.Text + ";" + txtTarea.Text + ";" + tiempoEmpleado) ;
                     }
@@ -94,15 +95,20 @@ namespace ControlTiempos
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            //TODO: IMPLEMENTAR BOTON DE PAUSA.   
+            Int16 digitosSubstring = 5;
+            if (segundos)
+            {
+                digitosSubstring = 8;
+            }   
+            
             if (!pausa)
             {
                 tiempoEmpleado = ((DateTime.Now-horaIni)-pausaAcumulada);
-                lblTiempoEmpleado.Text = tiempoEmpleado.ToString().Substring(0,5);
+                lblTiempoEmpleado.Text = tiempoEmpleado.ToString().Substring(0, digitosSubstring);
             } else
             {
                 tiempoPausa = (DateTime.Now - pausaIni);
-                lblContadorUltimaPausa.Text=tiempoPausa.ToString().Substring(0,5);
+                lblContadorUltimaPausa.Text=tiempoPausa.ToString().Substring(0, digitosSubstring);
             }
 
             if (cambioPausa)
@@ -119,7 +125,60 @@ namespace ControlTiempos
         private void frmMain_Load(object sender, EventArgs e)
         {
             cargarCombos(-1, -1);
-            Size = new Size(605, 228);
+            Size = new Size(601, 228);
+            string ruta = @"configuracion.txt";
+            using (StreamReader sr = File.OpenText(ruta))
+            {
+                string s = "";
+                while ((s = sr.ReadLine()) != null)
+                {
+                    Int32 longitud = s.Length;
+                    if (s.Substring(0, 1) == "1")
+                    {
+                        chkAlwaysOnTop.Checked = true;
+                    } else
+                    {
+                        chkAlwaysOnTop.Checked = false;
+                    }
+
+                    if (s.Substring(2, 1) == "1")
+                    {
+                        chkSegundos.Checked = true;
+                    }
+                    else
+                    {
+                        chkSegundos.Checked = false;
+                    }
+
+                    if (s.Substring(4, 1) == "1")
+                    {
+                        chkMostrarContadorPausa.Checked = true;
+                    }
+                    else
+                    {
+                        chkMostrarContadorPausa.Checked = false;
+                    }
+
+                    if (s.Substring(6, 1) == "1")
+                    {
+                        chkPosicion.Checked = true;
+                        StartPosition = FormStartPosition.Manual;
+                        Int32 X = Int32.Parse(s.Substring(8, 4));
+                        Int32 Y = Int32.Parse(s.Substring(13,4));
+                        Location = new Point(X, Y);
+                    }
+                    else
+                    {
+                        chkPosicion.Checked = false;
+                        StartPosition = FormStartPosition.CenterScreen;
+                    }
+
+                    txtArchivoHistorial.Text = s.Substring(18,longitud-18);
+                    rutaHistorial = s.Substring(18, longitud - 18) + ".csv";
+
+                }
+            }
+
         }
 
         private void cargarCombos (Int16 clientes, Int16 referencia)
@@ -312,5 +371,115 @@ namespace ControlTiempos
         {
 
         }
+
+        private void btnConfigurar_Click(object sender, EventArgs e)
+        {
+            Size = new Size(601, 418);
+        }
+
+        private void chkSegundos_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkSegundos.Checked)
+            {
+                segundos = true;
+            } else
+            {
+                segundos = false;
+            }
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            string ruta = @"configuracion.txt";
+            Int16 visible = 0;
+            Int16 segundosg = 0;
+            Int16 pausa = 0;
+            Int16 posicion = 0;
+
+            if (chkAlwaysOnTop.Checked)
+            {
+                visible = 1;
+            }
+
+            if (chkMostrarContadorPausa.Checked)
+            {
+                pausa = 1;
+            }
+
+            if (chkSegundos.Checked)
+            {
+                segundosg = 1;
+            }
+
+            if (chkPosicion.Checked)
+            {
+                posicion = 1;
+            }
+            
+            using (StreamWriter sw = File.CreateText(ruta))
+            {
+                sw.WriteLine(visible.ToString() + ";" + segundosg.ToString() + ";" + pausa.ToString() + ";" + posicion + ";" + txtPosicionX.Text + ";" +txtPosicionY.Text+ ";" + txtArchivoHistorial.Text);
+            }
+
+            rutaHistorial = txtArchivoHistorial.Text + ".csv";
+            Size = new Size(601, 228);
+        }
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkAlwaysOnTop.Checked)
+            {
+                String posicionX = Location.X.ToString();
+                if (posicionX.Length < 4)
+                {
+                    if (posicionX.Length < 3)
+                    {
+                        if (posicionX.Length < 2)
+                        {
+                            posicionX = "000" + posicionX;
+                        } else
+                        {
+                            posicionX = "00" + posicionX;
+                        }
+                    } else
+                    {
+                        posicionX = "0" + posicionX;
+                    }
+                }
+
+                String posicionY = Location.Y.ToString();
+                if (posicionY.Length < 4)
+                {
+                    if (posicionY.Length < 3)
+                    {
+                        if (posicionY.Length < 2)
+                        {
+                            posicionY = "000" + posicionY;
+                        }
+                        else
+                        {
+                            posicionY = "00" + posicionY;
+                        }
+                    }
+                    else
+                    {
+                        posicionY = "0" + posicionY;
+                    }
+                }
+
+                txtPosicionX.Text = posicionX;
+                txtPosicionY.Text = posicionY;
+            }
+        }
+
     }
 }

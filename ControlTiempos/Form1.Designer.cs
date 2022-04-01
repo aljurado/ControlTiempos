@@ -48,8 +48,14 @@
             this.lblEtiquetaUltimaPausa = new System.Windows.Forms.Label();
             this.lblEtiquetaPausaAcumulada = new System.Windows.Forms.Label();
             this.lblPausaAcumulada = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.btnConfigurar = new System.Windows.Forms.Button();
+            this.chkSegundos = new System.Windows.Forms.CheckBox();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtArchivoHistorial = new System.Windows.Forms.TextBox();
+            this.chkPosicion = new System.Windows.Forms.CheckBox();
+            this.txtPosicionX = new System.Windows.Forms.TextBox();
+            this.txtPosicionY = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // timer1
@@ -166,18 +172,68 @@
             this.lblPausaAcumulada.ForeColor = System.Drawing.Color.Red;
             this.lblPausaAcumulada.Name = "lblPausaAcumulada";
             // 
-            // dataGridView1
+            // btnConfigurar
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            resources.ApplyResources(this.dataGridView1, "dataGridView1");
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 29;
+            resources.ApplyResources(this.btnConfigurar, "btnConfigurar");
+            this.btnConfigurar.Name = "btnConfigurar";
+            this.btnConfigurar.UseVisualStyleBackColor = true;
+            this.btnConfigurar.Click += new System.EventHandler(this.btnConfigurar_Click);
+            // 
+            // chkSegundos
+            // 
+            resources.ApplyResources(this.chkSegundos, "chkSegundos");
+            this.chkSegundos.Name = "chkSegundos";
+            this.chkSegundos.UseVisualStyleBackColor = true;
+            this.chkSegundos.CheckedChanged += new System.EventHandler(this.chkSegundos_CheckedChanged);
+            // 
+            // btnGuardar
+            // 
+            resources.ApplyResources(this.btnGuardar, "btnGuardar");
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.Name = "label4";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // txtArchivoHistorial
+            // 
+            resources.ApplyResources(this.txtArchivoHistorial, "txtArchivoHistorial");
+            this.txtArchivoHistorial.Name = "txtArchivoHistorial";
+            this.txtArchivoHistorial.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // chkPosicion
+            // 
+            resources.ApplyResources(this.chkPosicion, "chkPosicion");
+            this.chkPosicion.Name = "chkPosicion";
+            this.chkPosicion.UseVisualStyleBackColor = true;
+            this.chkPosicion.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // txtPosicionX
+            // 
+            resources.ApplyResources(this.txtPosicionX, "txtPosicionX");
+            this.txtPosicionX.Name = "txtPosicionX";
+            // 
+            // txtPosicionY
+            // 
+            resources.ApplyResources(this.txtPosicionY, "txtPosicionY");
+            this.txtPosicionY.Name = "txtPosicionY";
             // 
             // frmMain
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.txtPosicionY);
+            this.Controls.Add(this.txtPosicionX);
+            this.Controls.Add(this.chkPosicion);
+            this.Controls.Add(this.txtArchivoHistorial);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.btnGuardar);
+            this.Controls.Add(this.chkSegundos);
+            this.Controls.Add(this.btnConfigurar);
             this.Controls.Add(this.lblPausaAcumulada);
             this.Controls.Add(this.lblEtiquetaPausaAcumulada);
             this.Controls.Add(this.lblEtiquetaUltimaPausa);
@@ -199,7 +255,6 @@
             this.Name = "frmMain";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.frmMain_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -225,6 +280,13 @@
         private Label lblEtiquetaUltimaPausa;
         private Label lblEtiquetaPausaAcumulada;
         private Label lblPausaAcumulada;
-        private DataGridView dataGridView1;
+        private Button btnConfigurar;
+        private CheckBox chkSegundos;
+        private Button btnGuardar;
+        private Label label4;
+        private TextBox txtArchivoHistorial;
+        private CheckBox chkPosicion;
+        private TextBox txtPosicionX;
+        private TextBox txtPosicionY;
     }
 }

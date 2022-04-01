@@ -81,7 +81,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtTarea.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>24</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -108,7 +108,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>23</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -139,7 +139,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>22</value>
   </data>
   <data name="lblTiempoEmpleado.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -151,13 +151,13 @@
     <value>7, 117</value>
   </data>
   <data name="lblTiempoEmpleado.Size" type="System.Drawing.Size, System.Drawing">
-    <value>140, 51</value>
+    <value>206, 51</value>
   </data>
   <data name="lblTiempoEmpleado.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
   <data name="lblTiempoEmpleado.Text" xml:space="preserve">
-    <value>00:00</value>
+    <value>00:00:00</value>
   </data>
   <data name="lblTiempoEmpleado.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -172,13 +172,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblTiempoEmpleado.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>21</value>
   </data>
   <data name="btnIniciar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>393, 116</value>
+    <value>426, 116</value>
   </data>
   <data name="btnIniciar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>185, 55</value>
+    <value>149, 55</value>
   </data>
   <data name="btnIniciar.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -196,7 +196,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnIniciar.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>20</value>
   </data>
   <data name="cmbClientes.Location" type="System.Drawing.Point, System.Drawing">
     <value>76, 15</value>
@@ -217,7 +217,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;cmbClientes.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>19</value>
   </data>
   <data name="btnAgregar.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 8pt, style=Bold</value>
@@ -247,16 +247,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnAgregar.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>18</value>
   </data>
   <data name="chkAlwaysOnTop.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="chkAlwaysOnTop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>446, 17</value>
+    <value>7, 191</value>
   </data>
   <data name="chkAlwaysOnTop.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>Yes</value>
+    <value>No</value>
   </data>
   <data name="chkAlwaysOnTop.Size" type="System.Drawing.Size, System.Drawing">
     <value>132, 24</value>
@@ -277,7 +277,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chkAlwaysOnTop.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>17</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -307,7 +307,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>16</value>
   </data>
   <data name="cmbReferencia.Location" type="System.Drawing.Point, System.Drawing">
     <value>76, 49</value>
@@ -328,7 +328,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;cmbReferencia.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>15</value>
   </data>
   <data name="btnAgregarReferencia.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -355,7 +355,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnAgregarReferencia.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>14</value>
   </data>
   <data name="btnPausa.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
@@ -364,7 +364,7 @@
     <value>False</value>
   </data>
   <data name="btnPausa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>333, 116</value>
+    <value>365, 116</value>
   </data>
   <data name="btnPausa.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 55</value>
@@ -385,7 +385,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnPausa.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>13</value>
   </data>
   <data name="lblContadorUltimaPausa.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -397,7 +397,7 @@
     <value>Arial Rounded MT Bold, 10.2pt</value>
   </data>
   <data name="lblContadorUltimaPausa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>261, 120</value>
+    <value>305, 120</value>
   </data>
   <data name="lblContadorUltimaPausa.Size" type="System.Drawing.Size, System.Drawing">
     <value>54, 20</value>
@@ -421,19 +421,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblContadorUltimaPausa.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>12</value>
   </data>
   <data name="chkMostrarContadorPausa.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="chkMostrarContadorPausa.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
   <data name="chkMostrarContadorPausa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>381, 48</value>
+    <value>182, 191</value>
   </data>
   <data name="chkMostrarContadorPausa.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>Yes</value>
+    <value>No</value>
   </data>
   <data name="chkMostrarContadorPausa.Size" type="System.Drawing.Size, System.Drawing">
     <value>197, 24</value>
@@ -443,9 +440,6 @@
   </data>
   <data name="chkMostrarContadorPausa.Text" xml:space="preserve">
     <value>Mostrar tiempo en pausa</value>
-  </data>
-  <data name="chkMostrarContadorPausa.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
   </data>
   <data name="&gt;&gt;chkMostrarContadorPausa.Name" xml:space="preserve">
     <value>chkMostrarContadorPausa</value>
@@ -457,7 +451,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chkMostrarContadorPausa.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>11</value>
   </data>
   <data name="lblEtiquetaUltimaPausa.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -466,7 +460,7 @@
     <value>False</value>
   </data>
   <data name="lblEtiquetaUltimaPausa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>163, 120</value>
+    <value>207, 120</value>
   </data>
   <data name="lblEtiquetaUltimaPausa.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
@@ -496,7 +490,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblEtiquetaUltimaPausa.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>10</value>
   </data>
   <data name="lblEtiquetaPausaAcumulada.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -505,7 +499,7 @@
     <value>False</value>
   </data>
   <data name="lblEtiquetaPausaAcumulada.Location" type="System.Drawing.Point, System.Drawing">
-    <value>173, 145</value>
+    <value>217, 145</value>
   </data>
   <data name="lblEtiquetaPausaAcumulada.Size" type="System.Drawing.Size, System.Drawing">
     <value>87, 20</value>
@@ -532,7 +526,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblEtiquetaPausaAcumulada.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>9</value>
   </data>
   <data name="lblPausaAcumulada.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -544,7 +538,7 @@
     <value>Arial Rounded MT Bold, 10.2pt</value>
   </data>
   <data name="lblPausaAcumulada.Location" type="System.Drawing.Point, System.Drawing">
-    <value>261, 145</value>
+    <value>305, 145</value>
   </data>
   <data name="lblPausaAcumulada.Size" type="System.Drawing.Size, System.Drawing">
     <value>54, 20</value>
@@ -568,30 +562,207 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblPausaAcumulada.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>8</value>
   </data>
-  <data name="dataGridView1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 195</value>
+  <data name="btnConfigurar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>430, 15</value>
   </data>
-  <data name="dataGridView1.RowHeadersWidth" type="System.Int32, mscorlib">
-    <value>51</value>
+  <data name="btnConfigurar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 29</value>
   </data>
-  <data name="dataGridView1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 188</value>
-  </data>
-  <data name="dataGridView1.TabIndex" type="System.Int32, mscorlib">
+  <data name="btnConfigurar.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
   </data>
-  <data name="&gt;&gt;dataGridView1.Name" xml:space="preserve">
-    <value>dataGridView1</value>
+  <data name="btnConfigurar.Text" xml:space="preserve">
+    <value>configurar</value>
   </data>
-  <data name="&gt;&gt;dataGridView1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;btnConfigurar.Name" xml:space="preserve">
+    <value>btnConfigurar</value>
   </data>
-  <data name="&gt;&gt;dataGridView1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnConfigurar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnConfigurar.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;dataGridView1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnConfigurar.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="chkSegundos.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkSegundos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>426, 191</value>
+  </data>
+  <data name="chkSegundos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 24</value>
+  </data>
+  <data name="chkSegundos.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="chkSegundos.Text" xml:space="preserve">
+    <value>Mostrar segundos</value>
+  </data>
+  <data name="&gt;&gt;chkSegundos.Name" xml:space="preserve">
+    <value>chkSegundos</value>
+  </data>
+  <data name="&gt;&gt;chkSegundos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkSegundos.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;chkSegundos.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="btnGuardar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>385, 302</value>
+  </data>
+  <data name="btnGuardar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 58</value>
+  </data>
+  <data name="btnGuardar.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="btnGuardar.Text" xml:space="preserve">
+    <value>Guardar y ocultar</value>
+  </data>
+  <data name="&gt;&gt;btnGuardar.Name" xml:space="preserve">
+    <value>btnGuardar</value>
+  </data>
+  <data name="&gt;&gt;btnGuardar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnGuardar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnGuardar.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 254</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 20</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Nombre archivo historial:</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="txtArchivoHistorial.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 251</value>
+  </data>
+  <data name="txtArchivoHistorial.Size" type="System.Drawing.Size, System.Drawing">
+    <value>238, 27</value>
+  </data>
+  <data name="txtArchivoHistorial.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="txtArchivoHistorial.Text" xml:space="preserve">
+    <value>historial</value>
+  </data>
+  <data name="&gt;&gt;txtArchivoHistorial.Name" xml:space="preserve">
+    <value>txtArchivoHistorial</value>
+  </data>
+  <data name="&gt;&gt;txtArchivoHistorial.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtArchivoHistorial.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtArchivoHistorial.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="chkPosicion.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkPosicion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 221</value>
+  </data>
+  <data name="chkPosicion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>238, 24</value>
+  </data>
+  <data name="chkPosicion.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="chkPosicion.Text" xml:space="preserve">
+    <value>Guardar posición en la pantalla</value>
+  </data>
+  <data name="&gt;&gt;chkPosicion.Name" xml:space="preserve">
+    <value>chkPosicion</value>
+  </data>
+  <data name="&gt;&gt;chkPosicion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkPosicion.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;chkPosicion.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="txtPosicionX.Location" type="System.Drawing.Point, System.Drawing">
+    <value>259, 219</value>
+  </data>
+  <data name="txtPosicionX.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 27</value>
+  </data>
+  <data name="txtPosicionX.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="txtPosicionX.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;txtPosicionX.Name" xml:space="preserve">
+    <value>txtPosicionX</value>
+  </data>
+  <data name="&gt;&gt;txtPosicionX.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtPosicionX.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtPosicionX.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txtPosicionY.Location" type="System.Drawing.Point, System.Drawing">
+    <value>326, 219</value>
+  </data>
+  <data name="txtPosicionY.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 27</value>
+  </data>
+  <data name="txtPosicionY.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="txtPosicionY.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;txtPosicionY.Name" xml:space="preserve">
+    <value>txtPosicionY</value>
+  </data>
+  <data name="&gt;&gt;txtPosicionY.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtPosicionY.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtPosicionY.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -601,7 +772,7 @@
     <value>8, 20</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>587, 433</value>
+    <value>583, 371</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
