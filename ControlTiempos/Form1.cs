@@ -332,7 +332,7 @@ namespace ControlTiempos
                 lblContadorUltimaPausa.Enabled=false;
                 lblEtiquetaUltimaPausa.Enabled = false;
                 lblEtiquetaUltimaPausa.Text = "Última Pausa:";
-                lblEtiquetaUltimaPausa.Location = new System.Drawing.Point(163, 120);
+                lblEtiquetaUltimaPausa.Location = new System.Drawing.Point(207, 120);
                 lblPausaAcumulada.Enabled = false;
                 lblEtiquetaPausaAcumulada.Enabled=false;
             } else
@@ -344,7 +344,7 @@ namespace ControlTiempos
                 lblContadorUltimaPausa.Enabled = true;
                 lblEtiquetaUltimaPausa.Enabled = true;
                 lblEtiquetaUltimaPausa.Text = "En Pausa:";
-                lblEtiquetaUltimaPausa.Location = new System.Drawing.Point(191, 120);
+                lblEtiquetaUltimaPausa.Location = new System.Drawing.Point(235, 120);
                 lblPausaAcumulada.Enabled = true;
                 lblEtiquetaPausaAcumulada.Enabled = true;
             }
