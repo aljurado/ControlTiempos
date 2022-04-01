@@ -96,10 +96,13 @@ namespace ControlTiempos
         private void timer1_Tick(object sender, EventArgs e)
         {
             Int16 digitosSubstring = 5;
-            if (segundos)
-            {
-                digitosSubstring = 8;
-            }   
+            if (!pausa)
+            { 
+                if (segundos)
+                {
+                    digitosSubstring = 8;
+                }
+            }
             
             if (!pausa)
             {
