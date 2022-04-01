@@ -66,6 +66,7 @@ namespace ControlTiempos
                     lblTiempoEmpleado.Text ="00:00";
                     lblContadorUltimaPausa.Text = "00:00";
                     lblPausaAcumulada.Text = "00:00";
+                    chkMostrarContadorPausa.Checked = false;
                 }
                 else
                 {
@@ -118,6 +119,7 @@ namespace ControlTiempos
         private void frmMain_Load(object sender, EventArgs e)
         {
             cargarCombos(-1, -1);
+            Size = new Size(605, 228);
         }
 
         private void cargarCombos (Int16 clientes, Int16 referencia)

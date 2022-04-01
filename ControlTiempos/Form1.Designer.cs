@@ -48,6 +48,8 @@
             this.lblEtiquetaUltimaPausa = new System.Windows.Forms.Label();
             this.lblEtiquetaPausaAcumulada = new System.Windows.Forms.Label();
             this.lblPausaAcumulada = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // timer1
@@ -164,10 +166,18 @@
             this.lblPausaAcumulada.ForeColor = System.Drawing.Color.Red;
             this.lblPausaAcumulada.Name = "lblPausaAcumulada";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            resources.ApplyResources(this.dataGridView1, "dataGridView1");
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 29;
+            // 
             // frmMain
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.lblPausaAcumulada);
             this.Controls.Add(this.lblEtiquetaPausaAcumulada);
             this.Controls.Add(this.lblEtiquetaUltimaPausa);
@@ -189,6 +199,7 @@
             this.Name = "frmMain";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.frmMain_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -214,5 +225,6 @@
         private Label lblEtiquetaUltimaPausa;
         private Label lblEtiquetaPausaAcumulada;
         private Label lblPausaAcumulada;
+        private DataGridView dataGridView1;
     }
 }
